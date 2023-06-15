@@ -5,8 +5,109 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JoyCon</title>
+
+</head>
+<style>
+.button {
+  background-color: #4e4e4e;
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+}
+
+.up { 
+  margin: 0;
+  position: absolute;
+  top: 40%;
+  left: 30%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.down { 
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.left { 
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.right { 
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.centerA {
+  height: 630px;
+  border: 3px solid rgb(128, 0, 0); 
+}
+
+.centerB {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+</style>
 </head>
 <body>
+
+
+<div class="up">
+    <div class="centerB">
+        <button class="button">[^]</button>        
+    </div>
+  </div>
+
+  <div class="down">
+    <div class="centerB">
+        <button class="button">[v]</button>        
+    </div>
+  </div>
+
+  <div class="left">
+    <div class="centerB">
+        <button class="button">[<]</button>        
+    </div>
+  </div>
+
+  <div class="right">
+    <div class="centerB">
+        <button class="button">[>]</button>        
+    </div>
+  </div>
+  
+
+  
+    <div class="centerB">
+        <button class="button">[A]</button>
+        <button class="button">[B]</button>
+    </div>
+  
+  
+
+
     <!-- buat komponen yang menggambarkan controller @MUTAMA -->
     <!--    [^]                -->
     <!-- [<][v][>]      [B][A] -->
